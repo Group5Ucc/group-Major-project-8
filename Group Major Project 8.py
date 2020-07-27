@@ -1,13 +1,16 @@
 from tkinter import*
 win=Tk()
-win.geometry("350x250")
+win.geometry("700x400")
+win['background']='#a8e4ff'
+win.resizable(0,0)
 win.title("Pokemon Battle RPS Style")
 
 
-btnMenu = Button(win,text="File").grid(row=0,column=0)
-btnMenu = Button(win,text="Rules").grid(row=0,column=1)
-btnMenu = Button(win,text="Restart").grid(row=0,column=2)
-lblChoice = Label(win,text="Choice").grid(row=2,column=0,pady=8)
+btnMenu = Button(win,text="File", bg="#AB82FF",fg="black", font="arial 8 bold").grid(row=0,column=0)
+btnMenu = Button(win,text="Rules", bg="#AB82FF",fg="black", font="arial 8 bold").grid(row=0,column=1)
+btnMenu = Button(win,text="Restart", bg="#AB82FF",fg="black", font="arial 8 bold").grid(row=0,column=2)
+lblChoice = Label(win,text="Choice",bg="#FFD700",fg="black", font="arial 8 bold").grid(row=3,column=0,pady=8)
+
 
 
 v = StringVar(win,"1")
